@@ -18,7 +18,7 @@ public class pages {
 	    }
 	
 	
-	
+	//post
 	@AndroidFindBy(id="io.voiapp.charger:id/beginButton")
 	private AndroidElement permission;
 	
