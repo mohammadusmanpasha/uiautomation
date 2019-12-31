@@ -1,2 +1,2 @@
-This is my repository Github
-ccept
+This is my Github repository 
+
