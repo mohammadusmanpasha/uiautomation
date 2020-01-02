@@ -22,6 +22,7 @@ import java.util.*;
 
 public class test extends baseclass {
 	
+	//page initialization
 	pages pagobj=new pages();
 	  
 	
