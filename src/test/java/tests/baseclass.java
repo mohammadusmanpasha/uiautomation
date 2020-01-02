@@ -1,5 +1,6 @@
 package tests;
 
+import java.io.File;
 import java.net.MalformedURLException;
 
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -13,6 +14,8 @@ public class baseclass {
 	
 	public static URL url;
 	public static AndroidDriver<MobileElement> driver;
+//	String apkpath="/Users/fidel/Downloads/Test.apk";
+//	File app=new File(apkpath);
 	
 	  @BeforeSuite
 	  public void setupAppium() throws MalformedURLException {
@@ -31,7 +34,9 @@ public class baseclass {
 		capabilities.setCapability("autoGrantPermissions", "true");
 		capabilities.setCapability("unlockType", "pin");
 		capabilities.setCapability("unlockKey", "2580");
-		capabilities.setCapability(MobileCapabilityType.APP, "/Users/muhammadusmanpasha/Desktop/hunter.apk");
+		capabilities.setCapability("appPackage", "io.voiapp.charger");
+		capabilities.setCapability("appActivity", "io.voiapp.hunter.MainActivity");
+		//capabilities.setCapability(MobileCapabilityType.APP, "/Users/muhammadusmanpasha/Desktop/hunter.apk");
 	
 		driver = new AndroidDriver<MobileElement>(new URL("http://0.0.0.0:4723/wd/hub"), capabilities);
 		

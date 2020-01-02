@@ -2,6 +2,9 @@ package tests;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -11,13 +14,28 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
+import io.appium.java_client.pagefactory.AndroidFindBy;
+import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import pages.pages;
+
 import java.util.*;
 
 public class test extends baseclass {
 	
 	pages pagobj=new pages();
+	  
 	
+	  
+//	  public test() {
+//	        PageFactory.initElements(new AppiumFieldDecorator(baseclass.driver), this);
+//	    }
+	  
+	  
+	  @AndroidFindBy(xpath = ".//*[@text='CONTINUE WITH YOUR HUNTER LOGIN']")
+	    public WebElement hunterloginbtn;
+	  
+	  
+	  
 //	@BeforeTest
 //	 static void Selendroid(){
 //	           if (( driver).isDeviceLocked())
@@ -35,9 +53,9 @@ public class test extends baseclass {
 //		pagobj.typePassword("Phj6Js8x3z");
 //		pagobj.clickLogin();
 		
-		driver.unlockDevice();
-		// blbla
+		
 
+		
 		 driver.findElementByAndroidUIAutomator("new UiSelector().text(\"CONTINUE WITH YOUR HUNTER LOGIN\")").click();
 		 driver.findElementByAndroidUIAutomator("new UiSelector().text(\"Email\")").sendKeys("mohammadusmanpasha2000@gmail.com");
 		 driver.findElementByAndroidUIAutomator("new UiSelector().text(\"password\")").sendKeys("Phj6Js8x3z");
@@ -59,9 +77,18 @@ public class test extends baseclass {
 		 driver.findElementByAndroidUIAutomator("new UiSelector().text(\"PROFILE\")").click();
 		 driver.findElementByAndroidUIAutomator("new UiSelector().text(\"SIGN OUT\")").click();
 		 
-		 driver.close();
+		 Assert.assertEquals(hunterloginbtn, hunterloginbtn);
+	}
 		 
-		 driver.wait(99999999);
+		 @AfterTest
+		 public void teardown() {
+
+		        if (driver != null) {
+		            driver.quit();
+		            
+		            
+		        }
+		
 		
 	}
 

@@ -2,47 +2,20 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="14742" started-at="2019-12-20T00:30:43 CET" finished-at="2019-12-20T00:30:57 CET">
+  <suite name="Default suite" duration-ms="23" started-at="2020-01-02T15:31:39 CET" finished-at="2020-01-02T15:31:39 CET">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="14742" started-at="2019-12-20T00:30:43 CET" finished-at="2019-12-20T00:30:57 CET">
+    <test name="Default test" duration-ms="23" started-at="2020-01-02T15:31:39 CET" finished-at="2020-01-02T15:31:39 CET">
       <class name="tests.test">
-        <test-method status="PASS" signature="setupAppium()[pri:0, instance:tests.test@9a7504c]" name="setupAppium" is-config="true" duration-ms="12864" started-at="2019-12-20T00:30:30 CET" finished-at="2019-12-20T00:30:43 CET">
+        <test-method status="PASS" signature="setupAppium()[pri:0, instance:tests.test@710f4dc7]" name="setupAppium" is-config="true" duration-ms="18024" started-at="2020-01-02T15:31:21 CET" finished-at="2020-01-02T15:31:39 CET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupAppium -->
-        <test-method status="FAIL" signature="testcases()[pri:0, instance:tests.test@9a7504c]" name="testcases" duration-ms="14723" started-at="2019-12-20T00:30:43 CET" finished-at="2019-12-20T00:30:57 CET">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[An unknown server-side error occurred while processing the command. Original error: Could not proxy. Proxy error: Could not proxy command to remote server. Original error: 404 - undefined
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Muhammads-MacBook-Pro.local', ip: 'fdaa:bbcc:ddee:0:649d:d826:533f:4d7%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_212'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {MobileCapabilityType.NO_RESET: false, app: /Users/muhammadusmanpasha/D..., appPackage: io.voiapp.charger, autoGrantPermissions: true, databaseEnabled: false, desired: {MobileCapabilityType.NO_RESET: false, app: /Users/muhammadusmanpasha/D..., autoGrantPermissions: true, deviceName: Android, newCommandTimeout: 60, platformName: android, platformVersion: 10, resetKeyboard: true, udid: emulator-5554, unicodeKeyboard: true, unlockKey: 2580, unlockType: pin}, deviceApiLevel: 29, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 60, pixelRatio: 3.5, platform: LINUX, platformName: ANDROID, platformVersion: 10, resetKeyboard: true, statBarHeight: 84, takesScreenshot: true, udid: emulator-5554, unicodeKeyboard: true, unlockKey: 2580, unlockType: pin, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: 99bcd379-27f4-49f1-b7fe-5fbd2c248738]]>
-            </message>
+        <test-method status="FAIL" signature="testcases()[pri:0, instance:tests.test@710f4dc7]" name="testcases" duration-ms="4" started-at="2020-01-02T15:31:39 CET" finished-at="2020-01-02T15:31:39 CET">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy. Proxy error: Could not proxy command to remote server. Original error: 404 - undefined
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Muhammads-MacBook-Pro.local', ip: 'fdaa:bbcc:ddee:0:649d:d826:533f:4d7%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_212'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {MobileCapabilityType.NO_RESET: false, app: /Users/muhammadusmanpasha/D..., appPackage: io.voiapp.charger, autoGrantPermissions: true, databaseEnabled: false, desired: {MobileCapabilityType.NO_RESET: false, app: /Users/muhammadusmanpasha/D..., autoGrantPermissions: true, deviceName: Android, newCommandTimeout: 60, platformName: android, platformVersion: 10, resetKeyboard: true, udid: emulator-5554, unicodeKeyboard: true, unlockKey: 2580, unlockType: pin}, deviceApiLevel: 29, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 60, pixelRatio: 3.5, platform: LINUX, platformName: ANDROID, platformVersion: 10, resetKeyboard: true, statBarHeight: 84, takesScreenshot: true, udid: emulator-5554, unicodeKeyboard: true, unlockKey: 2580, unlockType: pin, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: 99bcd379-27f4-49f1-b7fe-5fbd2c248738
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:45)
-at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
-at tests.test.testcases(test.java:62)
+              <![CDATA[java.lang.NullPointerException
+at tests.test.testcases(test.java:57)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -73,7 +46,7 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testcases -->
