@@ -24,9 +24,10 @@ public class baseclass {
 		
 	    DesiredCapabilities capabilities = new DesiredCapabilities();
 		capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "ANDROID");
-		capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "10");
-		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Android");
-		capabilities.setCapability(MobileCapabilityType.UDID, "emulator-5554"); //RF8M20NP95B
+		//capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "10");
+		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Android Emulator");
+		capabilities .setCapability (MobileCapabilityType.AUTOMATION_NAME ,"UiAutomator2"); 
+		//capabilities.setCapability(MobileCapabilityType.UDID, "emulator-5554"); //RF8M20NP95B
 		capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 60);
 		capabilities.setCapability("unicodeKeyboard", "true");                                     
 		capabilities.setCapability("resetKeyboard", "true");
