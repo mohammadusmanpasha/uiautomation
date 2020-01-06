@@ -2,7 +2,7 @@ name: Appium CI
 
 on: 
   schedule:
-  - cron: "55 12 * * 1-5" 
+  - cron: "50 12 * * 1-5" 
 
 jobs:
   build:
