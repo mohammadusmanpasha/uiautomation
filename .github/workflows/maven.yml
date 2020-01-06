@@ -1,8 +1,9 @@
 name: Appium CI
 
 on: 
-  schedule:
-  - cron: '56 12 * * *'
+  push:
+    branches: 
+      - localbranch
 
 jobs:
   build:
