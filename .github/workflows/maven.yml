@@ -1,4 +1,4 @@
-name: Java CI
+name: Appium CI
 
 on: 
   push:
@@ -36,7 +36,14 @@ jobs:
           $ANDROID_HOME/platform-tools/adb devices
           echo "Emulator started"
       - name : Build with Maven 
-        run: mvn test -Dtest=tests.*
+        run: mvn -B package --file pom.xml
+        
+        
+  
+        
+        
+        
+
    
   
 
