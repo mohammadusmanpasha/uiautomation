@@ -1,9 +1,8 @@
 name: Appium CI
 
 on: 
-  push:
-    branches: 
-      - localbranch
+  schedule:
+    - cron: '*/2 * * * *'
 
 jobs:
   build:
@@ -37,14 +36,7 @@ jobs:
           echo "Emulator started"
       - name : Build with Maven 
         run: mvn -B package --file pom.xml
-      - uses: 8398a7/action-slack@v2
-        with:
-           status: ${{ job.status }}
-           author_name: Integration Test # default: 8398a7@action-slack
-    env:
-           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # required
-           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }} # required
-           if: always() # Pick up events even if the job fails or is canceled.
+     
         
         
   
