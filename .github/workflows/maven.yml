@@ -1,9 +1,10 @@
 name: Appium CI
 
 on:
-  push:
-    branches: 
-      - localbranch, master
+  schedule:
+    - cron: 5 * * * * 
+  
+ 
 
 jobs:
   build:
