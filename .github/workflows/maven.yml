@@ -3,7 +3,7 @@ name: Appium CI
 on:
   push:
     branches: 
-      - localbranch
+      - localbranch, master
 
 jobs:
   build:
